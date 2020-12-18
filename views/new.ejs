@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <form action="<%= action %>" method="POST">
+      <p>Name:<input type="text" name="name" value="<%= doc.name %>"/></p>
+      <p>Origem:<input type="text" name="origin" value="<%= doc.origin %>" /></p>
+      <p>Year:<input type="text" name="year" value="<%= doc.year %>"/></p>
+      <p>Director:<input type="text" name="director" value="<%= doc.director %>"/></p>
+      <p>Genre:<input type="text" name="genre" value="<%= doc.genre %>"/></p>
+      <p>Language:<input type="text" name="language" value="<%= doc.language %>"/></p>
+      <p>Status:<input type="text" name="status" value="<%= doc.status %>"/></p>
+      <input type="submit" value="Salvar" />
+    </form>
+  </body>
+</html>
